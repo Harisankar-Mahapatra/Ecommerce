@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" href="./login_style.css">
+</head>
+<body>
+    <div class="container dflex">
+        <div class="box dflex">
+            <form class="signin-form" onsubmit="recovery(event)">
+                <div class="top-form-elements dflex">
+                    <span>RECOVERY</span>
+                </div>
+                <div class="form-elements dflex">
+                    <label for="email" id="label-email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-elements dflex form-btn">
+                    <button type="submit" id="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="true-snackbar">Email Sent Successfully</div>
+    <div id="false-snackbar">User Not Registered!</div>
+    <div id="error-snackbar">Something Went Wrong!</div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./login_script.js"></script>
+</body>
+</html>

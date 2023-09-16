@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+body{
+    background: url(./BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+::placeholder{
+    color: black;
+}
+.dflex{
+    display: flex;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    /* background-color: rgba(0, 0, 0, 0.04); */
+    min-width: 280px;
+    justify-content: center;
+    /* box-shadow: 0 0 7px white; */
+    padding: 25px 25px;
+    border-radius: 15px;
+}
+.signin-form{
+    width: 100%;
+}
+.top-form-elements{
+    justify-content: center;
+}
+.top-form-elements span{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+.form-elements{
+    flex-direction: column;
+}
+.form-elements input{
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 5px black;
+    background-color: transparent;
+}
+.form-btn{
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    padding: 7px 17px;
+    margin: 20px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 5px black;
+    background-color: transparent;
+}
+.bottom-form-elements{
+    justify-content: space-between;
+}
+.re_bottom-form-elements{
+    justify-content: center;
+}
+.bottom-form-elements a{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#true-snackbar,
+#false-snackbar,
+#neutral-snackbar,
+#error-snackbar {
+    background-color: rgba(26, 26, 26, 0.500);
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -140px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+#true-snackbar.show,
+#false-snackbar.show,
+#neutral-snackbar.show,
+#error-snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+.demo-anchor{
+    justify-content: center;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
