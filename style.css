@@ -103,3 +103,98 @@ header {
   left: 0;
   background-color: #e3e6f3;
 }
+
+header a {
+    color: black;
+  }
+  
+  #navbar {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #navbar li {
+    list-style: none;
+    padding: 0 20px;
+  }
+  
+  #navbar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  #navbar li a:hover,
+  #navbar li a.active {
+    color: #26b074;
+  }
+  
+  /* Main Section */
+  
+  .main {
+    background-image: url('./img/hero4.png');
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .main h4 {
+    padding-bottom: 15px;
+  }
+  
+  .main h1 {
+    color: #26b074;
+  }
+  
+  .main button {
+    background-image: url('./img/button.png');
+    background-color: transparent;
+    color: #26b074;
+    border: none;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .mobile {
+    display: none;
+  }
+  
+  #close {
+    display: none;
+  }
+  
+  /* Feature Section */
+  
+  .feature {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .ft-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 1px;
+  }
+  
+  .ft-box:hover {
+    box-shadow: 10px 20px 54px rgba(70, 62, 221, 0.1);
+  }
+  
+  .ft-box img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
