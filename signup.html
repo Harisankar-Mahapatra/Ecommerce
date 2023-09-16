@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal</title>
+    <link rel="stylesheet" href="./login_style.css">
+</head>
+<body>
+    <div class="container dflex">
+        <div class="box dflex">
+            <form class="signin-form" onsubmit="signup(event)">
+                <div class="top-form-elements dflex">
+                    <span>SIGN UP</span>
+                </div>
+                <div class="form-elements dflex">
+                    <label for="email" id="label-email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-elements dflex">
+                    <label for="pass" id="label-pass">Password</label>
+                    <input type="password" id="pass" placeholder="Create new password" required>
+                </div>
+                <div class="form-elements dflex">
+                    <label for="re_pass" id="label-re_pass">Confirm Password</label>
+                    <input type="password" id="re_pass" placeholder="Confirm new password" required>
+                </div>
+                <div class="form-elements dflex form-btn">
+                    <button type="submit" id="btn">Submit</button>
+                </div>
+                <div class="bottom-form-elements demo-anchor dflex">
+                    <!-- <a href="./recovery.html">Forgot password?</a> -->
+                    <a href="./signin.html">Already have an account?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="true-snackbar">Registered Successfully</div>
+    <div id="false-snackbar">Passwords Don't Match!</div>
+    <div id="neutral-snackbar">User Already Registered!</div>
+    <div id="error-snackbar">Something Went Wrong!</div>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./login_script.js"></script>
+</body>
+</html>
